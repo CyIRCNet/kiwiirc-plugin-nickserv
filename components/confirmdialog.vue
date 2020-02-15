@@ -3,7 +3,7 @@
         <p :class="['kiwi-' + themeName + '-simple-error', 'kiwi-ns-error']" id="validate">{{ConfirmReqText}}</p>
         <div class="u-input-text kiwi-ns-input">
 		<div class="u-input-text-inputs">
-			<input class="u-input" placeholder="Inserisci il codice di conferma" type="text" v-model="codeInput">
+			<input class="u-input" placeholder="Enter the confirmation code" type="text" v-model="codeInput">
 		</div>
 	</div>
 	<div class="u-input-text-underline">
