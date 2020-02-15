@@ -1,11 +1,11 @@
 let data = {
-    LoginText: 'Effettua il login ad un account',
-    RegisterText : 'Registra il nickname attualmente in uso:',
-    RegButton: 'REGISTRATI',
-    IDText : 'Il nick scelto risulta registrato, inserisci la password per autenticarti.',
-    IDButton : 'IDENTIFICATI',
-    ConfirmReqText : 'Inserisci il codice di conferma ricevuto per email per completare la registrazione dell\' account.',
-    ConfirmButton : 'CONFERMA REGISTRAZIONE'
+    LoginText: 'Log into an account',
+    RegisterText : 'Register the nickname currently in use:',
+    RegButton: 'REGISTER',
+    IDText : 'The chosen nick is registered, enter the password to authenticate.',
+    IDButton : 'LOGIN',
+    ConfirmReqText : 'Enter the confirmation code received by email to complete the account registration.',
+    ConfirmButton : 'CONFIRM REGISTRATION'
 };
 
 export function getString(key) {
