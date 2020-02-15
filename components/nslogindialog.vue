@@ -3,12 +3,12 @@
         <p :class="['kiwi-' + themeName + '-simple-error', 'kiwi-ns-login']" id="validate">{{LoginText}}</p>
         <div class="u-input-text kiwi-ns-input">
 		<div class="u-input-text-inputs">
-			<input class="u-input" placeholder="Inserisci account NickServ" type="text" v-model="accountInput">
+			<input class="u-input" placeholder="Enter NickServ account (Nickname)" type="text" v-model="accountInput">
 		</div>
         </div>
 	<div class="u-input-text kiwi-ns-input">
 		<div class="u-input-text-inputs">
-			<input class="u-input" placeholder="Inserisci la password" type="password" v-model="pwdInput">
+			<input class="u-input" placeholder="Enter your password" type="password" v-model="pwdInput">
 		</div>
         </div>
 	<div class="u-input-text-underline">
