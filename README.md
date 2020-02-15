@@ -24,6 +24,7 @@ and pasting. That way when you upgrade your plugin you will not need to
 copy again over into your plugins folder.
 
 example: 
+
 cd /folder/of/kiwiirc/static/plugins/
 
 ln -s /path/of/plugin/dist/plugin-nickserv.js plugin-nickserv.js
