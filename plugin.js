@@ -10,35 +10,35 @@ kiwi.plugin('nickserv', function(kiwi) {
     // Plugin Config #########################################################################
 
     // Wrong password text
-    var WPText = "Password errata!";
+    var WPText = "Wrong password!";
     // Bad password text on register
-    var BPText = "Attenzione, prova di nuovo con una password più sicura.<br> Le password devono essere lunghe almeno 5 caratteri, non devono essere facilmente intuibili (ad es. il proprio nome o nick)<br> e non possono contenere i caratteri di spazio e di tabulazione.";
+    var BPText = "Warning, try again with a more secure password.<br> Passwords must be at least 5 characters long, they must not be easily understood (eg your name or nick)<br> and they cannot contain space characters and tab.";
 
     // ANOPE NICKSERV
     // NickServ Identify Regex   include/language.h:92
-    var IDString = "^Questo nick è registrato e protetto. Se questo è il tuo";
+    var IDString = "^This nickname is registered and protected. If this is yours";
     // Wrong password Regex include/language.h:71
-    var WPString = "^Password errata";
+    var WPString = "^Wrong password";
     // Services enforce nick Regex  modules/pseudoclients/nickserv.cpp:254
-    var ENString = "^Il tuo nick sarà cambiato in";
+    var ENString = "^Your nickname will be changed to";
     // Account confirmation request Regex  modules/commands/ns_register.cpp:260 modules/commands/ns_register.cpp:391
-    var ConfirmReqString = "^Il tuo indirizzo email non è stato confermato. Per confermarlo, segui le istruzioni contenute nella email che hai ricevuto quando ti sei registrato";
+    var ConfirmReqString = "^Your email has not been confirmed. To confirm it, follow the instructions contained in the email you received when you registered";
     // Invalid Confirmation code Regex modules/commands/ns_register.cpp:83 modules/commands/ns_register.cpp:86
-    var InvalidConfirmString = "^Codice di attivazione non valido";
+    var InvalidConfirmString = "^Invalid activation code";
     // Invalid Confirmation code text include/language.h:99
-    var InvalidConfirmText = "Codice di attivazione non valido. Inserisci il codice di conferma ricevuto per email per completare la registrazione dell\' account.";
+    var InvalidConfirmText = "Invalid activation code. Enter the confirmation code received by email to complete the account registration.";
     // A valid confirmation code has been entered modules/commands/ns_register.cpp:67
-    var ValidConfirmString = "^Il tuo indirizzo email per (.*) è stato confermato.";
+    var ValidConfirmString = "^Your email address for (. *) Has been confirmed.";
     // Bad Password Notify include/language.h:73
-    var BadPwdString = "^Attenzione, prova di nuovo con una password più sicura.";
+    var BadPwdString = "^Warning, try again with a more secure password.";
     // Bad Email Notify include/language.h:86
-    var BadEmailString = "non è un indirizzo e-mail valido.";
+    var BadEmailString = "it is not a valid email address.";
     // Register delay modules/commands/ns_register.cpp:153
-    var RegDelayString = "^E' necessario aver usato questo nick per almeno 30 secondi prima di poterlo registrare.";
+    var RegDelayString = "^You must have used this nick for at least 30 seconds before you can register it.";
     // Login success Valid Password Regex modules/commands/ns_identify.cpp:38
-    var ValidPwdString = "^Password accettata - adesso sei riconosciuto.";
+    var ValidPwdString = "^Password accepted - you are now recognized.";
     // Already identified modules/commands/ns_identify.cpp:87 modules/commands/os_login.cpp:34
-    var AlreadyIdString ="^Sei già identificato.";
+    var AlreadyIdString ="^You are already identified.";
     // End Plugin Config  ####################################################################
 
     var IDRe = new RegExp(IDString ,"");
