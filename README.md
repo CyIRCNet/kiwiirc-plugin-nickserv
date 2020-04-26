@@ -11,7 +11,7 @@ yarn (https://yarnpkg.com/)
 
 Building the source
 
-yarn && yarn build
+`yarn && yarn build`
 
 The plugin will then be built into dist/plugin-nickserv.js
 
@@ -25,9 +25,9 @@ copy again over into your plugins folder.
 
 example: 
 
-cd /folder/of/kiwiirc/static/plugins/
+`cd /folder/of/kiwiirc/static/plugins/`
 
-ln -s /path/of/plugin/dist/plugin-nickserv.js plugin-nickserv.js
+`ln -s /path/of/plugin/dist/plugin-nickserv.js plugin-nickserv.js`
 
 Finally, edit your config.json file like so:
 
